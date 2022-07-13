@@ -4,37 +4,41 @@ public class Fish {
     private String name;
     private int age;
     private String color;
-    private String poroda;
 
-    void setName(String FishName){
-        this.name = FishName;
-    }
-    void setAge(int FithAge){
-        this.age = FithAge;
-    }
-    void setColor(String FithColor){
-        this.color = FithColor;
+    public Fish(){
 
     }
-    void setPoroda(String FithPoroda) {
-        this.poroda = FithPoroda;
+
+    public Fish(String name,int age,String color){
+        this.name =name;
+        this.age = age;
+        this.color = color;
 
     }
-        String getName() {
-            return name;
-        }
 
-
-        int getAge () {
-            return age;
-        }
-        String getColor () {
-            return color;
-
-        }
-        String getPoroda () {
-            return poroda;
-
-
-        }
+    public String getName() {
+        return name;
     }
+
+    public int getAge() {
+        return age;
+    }
+    public String getColor(){
+        return color;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+
+    }
+    public void setColor(String color){
+        this.color = color;
+    }
+}
+
+
+
